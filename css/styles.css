@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
    /* border: 0;*/
-    font-size: 100%;
+    font-size: 16px;
+    letter-spacing: 0.08px;
     box-sizing: border-box;
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
@@ -20,11 +21,29 @@
     -webkit-padding-end: 0px;
 }
 
+#banner {
+    margin-bottom: 15px;
+    background-image: url("../images/laundrybanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
 input, textarea {
+    margin-bottom: 10px;
     width: 100%;
     clear: both;
 }
 
+span {
+    text-decoration: underline;
+}
+
+#submit {
+    float: right;
+    width: 150px;
+    height: 30px;
+}
 
 /*iPhone portrait*/
 @media only screen and (min-width: 320px) {
@@ -43,11 +62,6 @@ input, textarea {
 
     #banner {
         height: 20em;
-        margin-bottom: 15px;
-        background-image: url("../images/laundrybanner.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
     }
 
     section.content {
@@ -55,17 +69,21 @@ input, textarea {
         padding-right: 20px;
     }
 
+    h1 {
+        margin-bottom: 15px;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+
     .introduction {
          margin-bottom: 50px;
     }
     
     .select-btn {
-        width: 30%;
+        margin-bottom: 15px;
+        width: 112px;
     }
 
-    #country {
-        margin-right: 24px;
-    }
 }
 
 /*iPhone landscape*/
@@ -73,11 +91,19 @@ input, textarea {
     body {
         color: green;
     }
+    
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
     #banner {
         height: 30rem;
     }
 
+     #country {
+        margin-right: 25px;
+    }
 }
 
 
@@ -93,16 +119,17 @@ input, textarea {
 
      section.content {
         padding-left: 0px;
-        padding-left: 0px;
+        padding-right: 0px;
     }
 
-     .introduction {
+    .introduction,
+    .form {
+        padding-left: 20px;
         padding-right: 20px;
     }
 
-    .form {
-        padding-left: 20px;
-    }
+
+    
 }
 
 
@@ -114,9 +141,5 @@ input, textarea {
 
     #banner {
         height: 45rem;
-    }
-
-     .select-btn {
-        width: 20%;
     }
 }
