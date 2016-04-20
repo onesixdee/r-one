@@ -21,6 +21,10 @@
     -webkit-padding-end: 0px;
 }
 
+#logo {
+    margin: 15px;
+}
+
 #banner {
     margin-bottom: 15px;
     background-image: url("../images/laundrybanner.jpg");
@@ -29,10 +33,10 @@
     background-position: center top;
 }
 
-input, textarea {
-    margin-bottom: 10px;
-    width: 100%;
-    clear: both;
+h1 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 span {
@@ -41,8 +45,7 @@ span {
 
 #submit {
     float: right;
-    width: 150px;
-    height: 30px;
+    width: 100px;
 }
 
 /*iPhone portrait*/
@@ -56,10 +59,6 @@ span {
         padding-left: 0px;
     }
 
-    #logo {
-        margin: 15px;
-    }
-
     #banner {
         height: 20em;
     }
@@ -69,21 +68,10 @@ span {
         padding-right: 20px;
     }
 
-    h1 {
-        margin-bottom: 15px;
-        font-size: 26px;
-        text-transform: uppercase;
-    }
-
     .introduction {
          margin-bottom: 50px;
     }
     
-    .select-btn {
-        margin-bottom: 15px;
-        width: 112px;
-    }
-
 }
 
 /*iPhone landscape*/
@@ -91,18 +79,9 @@ span {
     body {
         color: green;
     }
-    
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
 
     #banner {
         height: 30rem;
-    }
-
-     #country {
-        margin-right: 25px;
     }
 }
 
@@ -112,24 +91,11 @@ span {
     body {
         color: red;
     }
-    
-    #banner {
-        height: 38rem;
-    }
 
-     section.content {
+    section.content {
         padding-left: 0px;
         padding-right: 0px;
     }
-
-    .introduction,
-    .form {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-
-    
 }
 
 
@@ -141,5 +107,9 @@ span {
 
     #banner {
         height: 45rem;
+    }
+
+    .introduction {
+        padding-right: 15px;
     }
 }
