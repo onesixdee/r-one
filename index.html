@@ -39,34 +39,34 @@
 			<div class="col-xs-12 col-sm-6 col-md-6">
 				<div class="form">
 					<span><h1>Form</h1></span>
-						<form>
+						<form method="post">
 							<fieldset class="form-group row">
-								<label for="first-name" class="col-sm-3">First name</label>
-									<div class="col-sm-9">
+								<label for="first-name" class="col-xs-3">First name</label>
+									<div class="col-xs-9">
 										<input class="form-control" id="fname" type="text" name="fname">
 									</div>
 							</fieldset>
 							<fieldset class="form-group row">
-								<label for="last-name" class="col-sm-3">Last name</label>
-									<div class="col-sm-9">
+								<label for="last-name" class="col-xs-3">Last name</label>
+									<div class="col-xs-9">
 										<input type="text" class="form-control" name="lname" id="lname">
 									</div>
 							</fieldset>
 							<fieldset class="form-group row">
-								<label for="company" class="col-sm-3">Company</label>
-									<div class="col-sm-9">
+								<label for="company" class="col-xs-3">Company</label>
+									<div class="col-xs-9">
 										<input type="text" class="form-control" name="company" id="company">
 									</div>
 							</fieldset>
 							<fieldset class="form-group row">
-								<label for="title" class="col-sm-3">Title</label>
-									<div class="col-sm-9">
+								<label for="title" class="col-xs-3">Title</label>
+									<div class="col-xs-9">
 										<input type="text" class="form-control" name="title" id="title">
 									</div>
 							</fieldset>
 							<fieldset class="form-group row">
-								<label for="country" class="col-sm-3">Country</label>
-								<div class="col-sm-5">
+								<label for="country" class="col-xs-3">Country</label>
+								<div class="col-xs-5">
 								<select id="country" class="select-btn form-control" name="country" >
 									<option selected>Please select</option>
 									<option value="United States">United States</option>
@@ -387,8 +387,8 @@
 								</div>
 							</fieldset>
 							<fieldset class="form-group row">
-								<label for="states" class="col-sm-3">State</label>
-								<div class="col-sm-5">
+								<label for="states" class="col-xs-3">State</label>
+								<div class="col-xs-5">
 								<select id="states" class="select-btn form-control" name="states">
 									<option selected>Please select</option>
 									<option value="Alabama">Alabama</option>
@@ -447,12 +447,12 @@
 									</div>
 								</fieldset>
 							<fieldset class="form-group row">
-								<label for="comments" class="col-sm-3">Comments</label>
-								<div class="col-sm-9">
-								<textarea name="comments" class="form-control" id="comments" rows="10"></textarea>
+								<label for="comments" class="col-xs-3">Comments</label>
+								<div class="col-xs-9">
+									<textarea name="comments" class="form-control" id="comments" rows="10"></textarea>
 								</div>
 							</fieldset>
-							<input id="submit" type="submit" class="btn btn-primary">Submit</input>
+							<button id="submit" type="submit" class="btn btn-primary">Submit</button>
 						</form>
 					</div>
 				</div>
@@ -460,13 +460,9 @@
 	</section>
 
 	<section>
-		<div class="submit-form">
-			<div class="name"></div>
-			<div class="company"></div>
-			<div class="title"></div>
-			<div class="country"></div>
-			<div class="state"></div>
-			<div class="comments"></div>
+		<div class="row">
+			<div class="submit-form col-">
+
 		</div>
 	</section>
 </div>
