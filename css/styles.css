@@ -1,7 +1,11 @@
+/***********************
+    General Styles
+************************/
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: "Helvetica", sans-serif;
     letter-spacing: 0.08px;
     box-sizing: border-box;
     -webkit-margin-before: 0px;
@@ -13,6 +17,10 @@
     -webkit-padding-start: 0px;
     -webkit-padding-end: 0px;
 }
+
+/***********************
+    Header
+************************/
 
 #logo {
     margin: 15px;
@@ -26,6 +34,10 @@
     background-position: center top;
 }
 
+/***********************
+    Introduction
+************************/
+
 h1 {
     margin-bottom: 15px;
     font-size: 26px;
@@ -36,9 +48,29 @@ span {
     text-decoration: underline;
 }
 
-#submit {
+/***********************
+    Form
+************************/
+
+#submit-btn {
     width: 100px;
     float: right;   
+}
+
+.error {
+    color: #FF0000;
+    margin-bottom: 10px;
+}
+
+/***********************
+    Submitted Form
+************************/
+
+.form-wrapper {
+    margin-left: 15px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
 }
 
 /*iPhone portrait*/
@@ -53,7 +85,8 @@ span {
         height: 20em;
     }
 
-    section.content {
+    .content {
+        margin-bottom: 50px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -61,13 +94,6 @@ span {
     .introduction {
          margin-bottom: 50px;
     }
-
-    .submit-form {
-        margin-top: 50px;
-        margin-left: 15px;
-        padding: 30px;
-        border: 1px solid #ccc;
-   }
 }
 
 /*iPhone landscape*/
@@ -78,7 +104,6 @@ span {
     }
 }
 
-
 /*ipad potrait*/
 @media only screen and (min-width: 768px) {
 
@@ -86,7 +111,7 @@ span {
         height: 38rem;
     }
 
-    section.content {
+    .content {
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -95,7 +120,6 @@ span {
         margin-left: 0px;
     }
 }
-
 
 /*ipad lanscape / small laptop*/
 @media only screen and (min-width: 1024px) {
